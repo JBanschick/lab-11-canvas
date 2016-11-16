@@ -1,0 +1,93 @@
+<html>
+<head>
+	<title> my page is awesome  </title>
+</head>
+<body onload="draw()">
+<canvas id="sketch" width="300" height="300">
+</canvas>
+<script>
+
+function draw() {
+// your drawing goes here
+
+var sketch = document.getElementById('sketch');
+var context = sketch.getContext("2d");
+var radius = prompt("Radius?");
+var color = prompt("Color?");
+
+if (color == "Red") {
+
+context.fillStyle = "#ff0000"
+context.beginPath();
+context.arc(150, 150, radius, 0, 2 * Math.PI, true);
+context.closePath();
+context.fill();
+
+}
+
+else if (color == "Blue") {
+
+context.fillStyle = "#0000ff"
+context.beginPath();
+context.arc(150, 150, radius, 0, 2 * Math.PI, true);
+context.closePath();
+context.fill();
+}
+
+else if (color == "Green") {
+
+context.fillStyle = "#00ff00"
+context.beginPath();
+context.arc(150, 150, radius, 0, 2 * Math.PI, true);
+context.closePath();
+context.fill();
+}
+
+else if (color == "Purple") {
+
+context.fillStyle = "#a500ff"
+context.beginPath();
+context.arc(150, 150, radius, 0, 2 * Math.PI, true);
+context.closePath();
+context.fill();
+}
+
+else if (color == "Yellow") {
+
+context.fillStyle = "#ffff00"
+context.beginPath();
+context.arc(150, 150, radius, 0, 2 * Math.PI, true);
+context.closePath();
+context.fill();
+}
+
+else if (color == "Orange") {
+
+context.fillStyle = "#ffa500"
+context.beginPath();
+context.arc(150, 150, radius, 0, 2 * Math.PI, true);
+context.closePath();
+context.fill();
+}
+
+else if (color == "White") {
+
+context.fillStyle = "#ffffff"
+context.beginPath();
+context.arc(150, 150, radius, 0, 2 * Math.PI, true);
+context.closePath();
+context.fill();
+}
+
+else {
+
+context.fillStyle = "#000000"
+context.beginPath();
+context.arc(150, 150, radius, 0, 2 * Math.PI, true);
+context.closePath();
+context.fill();
+}
+}
+</script>
+</body>
+</html>
