@@ -1,0 +1,24 @@
+<html>
+<head>
+	<title> my page is awesome  </title>
+</head>
+<body onload="draw()">
+<canvas id="sketch" width="300" height="300">
+</canvas>
+<script>
+
+var sketch = document.getElementById('sketch');
+var context = sketch.getContext("2d");
+
+function draw() {
+// your drawing goes here
+context.fillRect(30,30,50,50);
+context.beginPath();
+context.arc(125, 55, 25, 0, 2 * Math.PI, true);
+context.closePath();
+context.fill();
+}
+
+</script>
+</body>
+</html>
