@@ -3,7 +3,7 @@
 	<title> my page is awesome  </title>
 </head>
 <body onload="draw()">
-<canvas id="sketch" width="300" height="300">
+<canvas id="sketch" width="400" height="300">
 </canvas>
 <script>
 
@@ -12,10 +12,15 @@ function draw() {
 	var context = sketch.getContext("2d");
 	for(a = 0; a <= 4; a = a + 1){
 
-		var b = 35
-		* a;
-		context.fillstyle = "#ffffff"
+		var b = 90 * a;
+		context.fillStyle = "#00ff00"
 		context.fillRect(b, 0, 30, 30);
+
+		context.fillStyle = "#ff00ff"
+		context.beginPath();
+		context.arc(b + 60, 15, 15,0, 2*Math.PI, true);
+		context.closePath();
+		context.fill(); 
 	}
 }
 </script>

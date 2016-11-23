@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title> my page is awesome  </title>
+</head>
+<body>
+<canvas id="sketch" width="400" height="600">
+</canvas>
+<script>
+var sketch = document.getElementById('sketch');
+var context = sketch.getContext("2d");
+
+context.fillStyle="#ff0000"
+
+context.fillRect(25,0,200,100);
+
+context.beginPath();
+context.arc(200, 150, 40,0, 2*Math.PI, true);
+context.closePath();
+context.fill();
+
+</script>
+</body>
+</html>
